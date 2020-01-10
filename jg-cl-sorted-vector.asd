@@ -9,7 +9,7 @@
                         :components ((:file "vectorUtils") 
                                      (:file "sortedVector")))))
 
-(defsystem :jg-cl-raytracer/tests
+(defsystem :jg-cl-sorted-vector/tests
   :description "Test suite for the vector utils and sorted vec"
   :license "MIT"
   :author "Jeff Gonis"
@@ -22,6 +22,6 @@
                 :serial t
                 :components ((:file "tests")
                              (:file "utilTests")
-                             (:file "sortedVecTests"))))
+                             (:file "sortedVectorTests"))))
   :perform (asdf:test-op (op system)
              (funcall (read-from-string "jg-cl-sorted-vector.tests:run-tests"))))

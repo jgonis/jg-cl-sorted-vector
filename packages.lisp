@@ -15,6 +15,8 @@
         :jgvu)
   (:export :sorted-vector
            :make-sorted-vector
+           :add-element
+           :set-element
            :lower-bound
            :upper-bound
            :equal-range
